@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual Goku Você É?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Qual Goku Você É?</h1>
+        <nav>
+            <ul>
+                <li><a href="#cursos">Descubra</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="cursos">
+        <h2>Descubra qual Goku você é!</h2>
+        <div class="curso">
+            <h3>Somos um site confiável</h3>
+            <p>Coloque todos os seus dados bancários!</p>
+            <button onclick="mostrarFormulario()">Descubra</button>
+        </div>
+        <img src="C:\Users\REDES-PC\Desktop\JUAN\images/goku.jpg" alt="Goku Super Saiyajin" width="300">
+        <img src="https://example.com/goku2.jpg" alt="Goku Normal" width="300">
+    </section>
+
+    <section id="formulario" style="display:none;">
+        <h2>Confia né nóis</h2>
+        <form id="paymentForm">
+            <label for="name">Nome no Cartão:</label>
+            <input type="text" id="name" required>
+
+            <label for="cardNumber">Número do Cartão:</label>
+            <input type="text" id="cardNumber" required>
+
+            <label for="expiry">Data de Vencimento:</label>
+            <input type="text" id="expiry" placeholder="MM/AA" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" required>
+
+            <button type="submit">Pagar</button>
+        </form>
+    </section>
+
+    <section id="resultado" style="display:none;">
+        <h2>Você é o Goku!</h2>
+        <img src="C:\Users\REDES-PC\Desktop\JUAN\images/goku2.jpg" alt="Goku" width="300">
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Descubra qual Goku você é.</p>
+    </footer>
+
+    <script>
+        function mostrarFormulario() {
+            document.getElementById('formulario').style.display = 'block';
+        }
+
+        document.getElementById('paymentForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Pagamento realizado com sucesso KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK!');
+            document.getElementById('formulario').style.display = 'none';
+            document.getElementById('resultado').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
